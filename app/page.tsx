@@ -1,13 +1,14 @@
 "use client";
+import { ChakraProvider } from '@chakra-ui/react';
 import Features from './components/Features';
 import Header from './components/Header';
 import Pricing from './components/Pricing';
 export default function Home() {
   return (
-    <div>
+    <ChakraProvider>
        <Header/>
        <Pricing/>
        <Features/>
-       </div>
+       </ChakraProvider>
   )
 }
